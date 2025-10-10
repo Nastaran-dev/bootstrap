@@ -1,0 +1,60 @@
+/* mobile scope */
+#menu{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    >li{
+        height: 100px;
+        background-color: orange;
+        border: 2px solid white;
+        width: 100%;
+        &:nth-of-type(5), &:nth-of-type(6){
+            display: none;
+        }
+       
+
+    }
+}
+
+/* tablet scope */
+@media screen and (min-width:768px){
+    #menu{
+        >li{
+            width: 50%;
+            &:nth-of-type(5){
+                width: 100%;
+               display: flex;
+            }
+        }
+    }
+
+}
+
+
+
+
+/* desktop scope */
+
+@media screen and (min-width:992px) {
+    #menu{
+        >li{
+            width: 16.6667% !important;
+            &:nth-of-type(6){
+                display: flex;
+            }
+        }
+    }
+
+}
+
+/* big scope */
+
+@media  screen and (min-width:1200px) {
+    #menu{
+        width: 90%;
+    }
+}
